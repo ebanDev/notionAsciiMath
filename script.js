@@ -31,14 +31,13 @@
                 for (const line of lines) {
                     if (line != "") {
                         const tex = parser.parse(line);
-                        output += "%" + line + "\r\n";
+                        output += "%" + line + "\n" + tex + "\n";
+                        console.log(output);
                     }
                 }
-                output += parser.parse(originalContent)
             }
             document.execCommand('selectAll');
-            document.execCommand('delete');
-            document.execCommand('insertText', false, output);
+            document.execCommand('insertHTML', false, output);
         }
     });
 
