@@ -4,7 +4,7 @@
 // @version      1
 // @description  Allows you to use AsciiMath in Notion ! Just press ScrollLock and see the magic 👀
 // @author       Eban
-// @match        https://www.notion.so/
+// @match        https://www.notion.so/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=notion.so
 // @grant        none
 // ==/UserScript==
